@@ -52,7 +52,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 582px;
+    max-width: 768px;
   }
 }
 
@@ -1089,11 +1089,15 @@ textarea {
   justify-content: flex-start;
   gap: 24px;
 }
+.portfolio__sort-item {
+  display: inline-block;
+}
 
 @media screen and (min-width: 768px) {
   .portfolio__sort {
     margin-bottom: 64px;
     justify-content: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -1116,6 +1120,7 @@ textarea {
   letter-spacing: 0.04em;
   transition: color var(--transition), background-color var(--transition),
     border-color var(--transition), box-shadow var(--transition);
+  
 }
 
 .portfolio__sort-btn:hover,
